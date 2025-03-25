@@ -18,7 +18,7 @@ class _mainFileState extends State<mainFile> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Padding(padding: EdgeInsets.all(10)),
-            Text('You have pressed the button $_count times.'),
+            CircleAvatar(child: Text((_count.toString()),style: TextStyle(color: Colors.white),),backgroundColor: Colors.blue,),
             const Padding(padding: EdgeInsets.all(20)),
             ElevatedButton(
               onPressed: () {
