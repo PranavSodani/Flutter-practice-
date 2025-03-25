@@ -5,15 +5,22 @@ class mainFile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('My Home Page'),
+      appBar: AppBar(title: Text('My Home Page')),
+      body: Center(
+        child: Column(
+          children: [
+            Padding(padding: EdgeInsets.all(10)),
+            Text('Hello World'),
+            Padding(padding: EdgeInsets.all(20)),
+            ElevatedButton(
+              onPressed: () {
+                print('Click!!!');
+              },
+              child: Text('Button'),
+            ),
+          ],
+        ),
       ),
-      body: Center(child: Column(
-      children: [
-        Text(
-          'Hello World'
-        )
-      ],
-    )));
+    );
   }
 }
